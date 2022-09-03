@@ -30,16 +30,20 @@
             <!-- =========================
                 ******* NAVBAR *******
             ========================== -->
+
+  <section id="fixed-bar">
     <header class="mb-auto abt">
-        <div class="container">
-          <div class="page-nav">
-            <img id="cybersheep-logo"
-          src="C:/Users/vivia/OneDrive/Documentos/CLASES-BOOTSTRAP/res/img/recurso-32.png"
-          href="index.html" alt="logo">
-          <!-- <h3 class="float-md-start mb-0">Cybersheep</h3> -->
-            <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="C:about-us.html">About us</a>
+        <div class="container nav-bar-container">
+          <a href="index.html"><img id="cybersheep-logo"
+            src="res/img/recurso-32.png" alt="logo"></a>
+          <div class="page-nav" id="navigation-bar">
+            <input type="checkbox" id="toggle-menu">
+            <label class="menu-icon" for="toggle-menu"><i class="fa fa-bars"></i></label>
+            <label class="menu-icon-close" for="toggle-menu"><i class="fa-solid fa-xmark"></i></label>
+
+            <nav class="nav nav-masthead">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about-us.html">About us</a>
               <a class="nav-link" href="services.html">Services</a>
               <a class="nav-link" href="portfolio.html">Portfolio</a>
               <a class="nav-link" href="contact.html">Contact</a>
@@ -64,12 +68,12 @@
 
         <div id="top-socialm">
           <a href=""><i id="top-social-icon" class="fa-brands fa-facebook-f"></i></a>
-          <a href=""><i id="top-social-icon" class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/message/UHK4ZN6U7DERB1"><i id="top-social-icon" class="fa-brands fa-whatsapp"></i></a>
           <a href=""><i id="top-social-icon" class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </section>
-
+  </section>
 
 
         <!-- =======================================================
@@ -80,10 +84,8 @@
                 ***** ¡¡¡MAP!!! *****
             ======================== -->
     <section class="cont-bg">
-      <img class="cont-bg-img" src="res/img/cube-bg.jpg" alt="">
-        <div class="container contact-content">
-        <div class="row first-row">
-            <div class="col-md-5" id="map">
+        <div class=" container first-row">
+            <div class="" id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.74293098759887!2d-77.05037860392167!3d-12.047412081382847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d6aa07d605%3A0xb9489f54d84fecc6!2sEdificio%20Centro%20Colonial!5e0!3m2!1ses-419!2spe!4v1661220259113!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -91,31 +93,31 @@
             <!-- =======================
                 ***** CONTACT FORM *****
             ======================== -->
-              <div class="col-md-5 whole-form" id="contact-form">
+              <div class="whole-form" id="contact-form">
                 <h3 class="cont-form-h3">Contact form</h3>
                   <div class="row form-row">
                     
-                    <div class="col">
+                    <div class="col-md">
                         <label class="form-label" for="fname">First name</label>
-                        <input type="text" id="fname" class="form-control big-form-input" placeholder="First name" aria-label="first-name">
+                        <input type="text" id="fname" class="form-control big-form-input" required placeholder="First name" aria-label="first-name">
                     </div>
 
-                    <div class="col">
+                    <div class="col-md">
                       <label class="form-label" for="lname">Last name</label>
-                      <input type="text" id="lname" class="form-control big-form-input" placeholder="Last name" aria-label="first-name">
+                      <input type="text" id="lname" class="form-control big-form-input" required placeholder="Last name" aria-label="first-name">
                   </div>
 
                   </div>
 
                   <div class="row form-row">
-                    <div class="col">
+                    <div class="col-md">
                         <label class="form-label" for="mails">E-mail</label>
-                        <input type="email" id="mails" class="form-control big-form-input" placeholder="E-mail" aria-label="e-mail">
+                        <input type="email" id="mails" class="form-control big-form-input" required placeholder="E-mail" aria-label="e-mail">
                     </div>
 
-                    <div class="col">
+                    <div class="col-md">
                         <label class="form-label" for="celphone">Phone number</label>
-                        <input type="tel" id="celphone" class="form-control big-form-input" placeholder="Phone number" aria-label="phone-number">
+                        <input type="tel" id="celphone" class="form-control big-form-input" required placeholder="Phone number" aria-label="phone-number">
                     </div>
                   </div>
 
@@ -126,43 +128,43 @@
                     </div>
                   </div>
 
-                  <div class="row form-row">
-                    <div class="col">
+                  <div class="form-row">
+                    <div class="form-btn">
                       <a class="btn prim-btn">Submit</a>
                       <a class="btn sec-btn">Reset</a>
                     </div>
                   </div>
-                </div>
-              </div>
+        </div>
+    </section>
 
 
             <!-- ================================================
                 ***** CONTACT INFO (BELOW MAP AN FORM ROW) *****
             ================================================== -->
-          <div class="container contact-content">
-            <div class="row second-row">
-                <div class="col col-center">
-                    <span><i class="gg-pin icon-color"></i></span>
-                    <span class="unic-center">Av. Oscar Benavides #679. Edificio 
+      <section class="contact-content">
+          <div class="container">
+              <div class="row second-row">
+                  <div class="col-md col-center">
+                      <span><i class="gg-pin icon-color"></i></span>
+                      <span class="unic-center">Av. Oscar Benavides #679. Edificio 
                         Centro Colonial - Cercado de Lima.</span>
-                </div>
-                <div class="col col-center">
-                    <span id=""><i class="lni lni-mobile icon-color"></i></span>
-                    <span class="unic-center">Teléfono +51</span>
-                </div>
-                <div class="col col-center">
-                    <span><i class="gg-time icon-color"></i></span>
-                    <span class="unic-center">Lunes a viernes: 9am a 6pm</span>
-                    <span class="unic-center">Sábados: 9am a 1pm</span>
-                </div>
-                <div class="col col-center">
-                    <span><i class="gg-mail icon-color"></i></span>
-                    <span class="unic-center">correo-por-crear@correo.com</span>
-                </div>
-            </div>
-          </section>
-        </div>
-      </div>
+                  </div>
+                  <div class="col-md col-center">
+                      <span id=""><i class="lni lni-mobile icon-color"></i></span>
+                      <span class="unic-center">Teléfono +51</span>
+                  </div>
+                  <div class="col-md col-center">
+                      <span><i class="gg-time icon-color"></i></span>
+                      <span class="unic-center">Lunes a viernes: 9am a 6pm</span>
+                      <span class="unic-center">Sábados: 9am a 1pm</span>
+                  </div>
+                  <div class="col-md col-center">
+                      <span><i class="gg-mail icon-color"></i></span>
+                      <span class="unic-center">correo-por-crear@correo.com</span>
+                  </div>
+              </div>
+          </div>
+      </section>
 
             <!-- ================================================
                           ********** FOOTER **********

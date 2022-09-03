@@ -28,25 +28,25 @@ crossorigin="anonymous">
 <body>
 
 <!--  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"> -->
-      <header class="mb-auto abt">
+  <header class="mb-auto abt">
+    <div class="container nav-bar-container">
+      <a href="index.html"><img id="cybersheep-logo"
+        src="res/img/recurso-32.png" alt="logo"></a>
+      <div class="page-nav" id="navigation-bar">
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-icon" for="toggle-menu"><i class="fa fa-bars"></i></label>
+        <label class="menu-icon-close" for="toggle-menu"><i class="fa-solid fa-xmark"></i></label>
 
-        <div class="container">
-          <div class="page-nav">
-           <a href="index.html"><img id="cybersheep-logo"
-          src="C:/Users/vivia/OneDrive/Documentos/CLASES-BOOTSTRAP/res/img/recurso-32.png"
-          alt="logo"></a>
-          <!-- <h3 class="float-md-start mb-0">Cybersheep</h3> -->
-            <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="about-us.html">About us</a>
-              <a class="nav-link" href="services.html">Services</a>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </div>
-        
-      </header>
+        <nav class="nav nav-masthead">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About us</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+</header>
 
       <section class="breadcrumb-section">
         <div class="container breadc-bar">
@@ -60,12 +60,12 @@ crossorigin="anonymous">
 
       <section class="about-section">
         <div class="container">
-          <div class="row">
+          <div class="row about-us-row">
 
             <!-- ==============
               COLUMNA #1 IMG 
               ================= -->
-            <div class="col-4">
+            <div class="col-4 abt-img-column">
               <img class="abt-img" src="https://qph.cf2.quoracdn.net/main-qimg-6a4f9d2ccf65c7755d594e4d66131d6d-lq" alt="batman-hellbat">
             </div>
             <!--END OF ROW #1-->
@@ -73,7 +73,7 @@ crossorigin="anonymous">
             <!-- ========================
               COLUMNA #2 TEXTO + BOTONES 
               ======================== -->
-            <div class="col-8">
+            <div class="col-8 abt-img-column">
               <h3>Servidores configurados a medida</h3>
               <h4>Soluciones sobre Windows Server y Linux</h4>
               <p>Cybersheep es una iniciativa nacida en el 2020 con la premisa de dar 
